@@ -57,19 +57,31 @@
 #     print("")
 # ------------------------------------------------
 
-print("Mirrored Rhombus Star Pattern")
+# print("Mirrored Rhombus Star Pattern")
 #      ****
 #     ****
 #    ****
 #   ****
 
-size = 4
+# size = 4
 
-for i in range(size):
-    for j in range(size, i, -1):
-      print(" ",end="")
+# for i in range(size):
+#     for j in range(size, i, -1):
+#       print(" ",end="")
 
-    for k in range(size,0,-1):
-        print("*", end="")
+#     for k in range(size,0,-1):
+#         print("*", end="")
     
+    # print("")
+# ----------------------------------------
+print("Triangle Star Pattern")
+
+# *
+# **
+# ***
+# ****
+size = 4
+for i in range(size):
+    for j in range(i+1):
+       print("*",end="")
     print("")

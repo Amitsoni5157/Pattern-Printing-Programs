@@ -78,27 +78,41 @@
 // }
 
 
-Console.WriteLine("Mirrored Rhombus Star Pattern");
-//     ****
-//    ****
-//   ****
-//  ****
+// Console.WriteLine("Mirrored Rhombus Star Pattern");
+// //     ****
+// //    ****
+// //   ****
+// //  ****
+// int size = 4;
+
+// for(int i =0; i< size; i++)
+// {
+//     for (int j = size; j > i; j--)
+//     {
+//          Console.Write(" ");           
+//     }
+
+//     for (int k = 0; k < size; k++)
+//     {
+//         Console.Write("*");   
+//     }
+
+//     Console.WriteLine("");   
+
+// }
+
+Console.WriteLine("Triangle Star Pattern");
+
+// *
+// **
+// ***
+// ****
 int size = 4;
-
-for(int i =0; i< size; i++)
+for (int i = 0; i < size; i++)
 {
-    for (int j = size; j > i; j--)
+    for (int j = 0; j <= i; j++)
     {
-         Console.Write(" ");           
+        Console.Write("*"); 
     }
-
-    for (int k = 0; k < size; k++)
-    {
-        Console.Write("*");   
-    }
-
-    Console.WriteLine("");   
-
+     Console.WriteLine(""); 
 }
-
-
