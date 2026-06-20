@@ -29,20 +29,47 @@
         
    
 
+# ------------------------------------------------------
+#   print("Rhombus Star Pattern")
+#  #         //    ****
+# #         //      ****
+# #         //       ****
+# #         //        ****
+# size = 4
 
-#  print("Rhombus Star Pattern")
- #         //    ****
-#         //     ****
-#         //      ****
-#         //       ****
+# for i in range(size):
+    
+#     for space in range(i):
+#         print(" ", end="")
+
+#     for k in range(size):
+#         print("*", end="")
+
+#     print("")
+# -----------------------------------------------------------
+# print("Rectangle Star Pattern")
+# row = 4
+# column = 6
+
+# for row in range(4):
+#     for column in range(6):
+#         print("*",end="")
+#     print("")
+# ------------------------------------------------
+
+print("Mirrored Rhombus Star Pattern")
+#      ****
+#     ****
+#    ****
+#   ****
+
 size = 4
 
 for i in range(size):
-    
-    for space in range(i):
-        print(" ", end="")
+    for j in range(size, i, -1):
+      print(" ",end="")
 
-    for k in range(size):
+    for k in range(size,0,-1):
         print("*", end="")
-
+    
     print("")
