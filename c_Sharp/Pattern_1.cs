@@ -100,19 +100,57 @@
 //     Console.WriteLine("");   
 
 // }
+// -------------------------------------
+// Console.WriteLine("Triangle Star Pattern");
 
-Console.WriteLine("Triangle Star Pattern");
+// // *
+// // **
+// // ***
+// // ****
+// int size = 4;
+// for (int i = 0; i < size; i++)
+// {
+//     for (int j = 0; j <= i; j++)
+//     {
+//         Console.Write("*"); 
+//     }
+//      Console.WriteLine(""); 
+// }
 
-// *
-// **
-// ***
-// ****
-int size = 4;
-for (int i = 0; i < size; i++)
-{
-    for (int j = 0; j <= i; j++)
-    {
-        Console.Write("*"); 
+// ---------------------------------------------------
+
+//       *
+//      ***  
+//     ***** 
+//    *******
+ Console.WriteLine("Pyramid  Star Pattern");
+
+int row = 4;
+ for (int i = 0; i < row; i++) // i = 0
+ {
+    for (int j = 0; j < row - i - 1; j++) //4 -0 -1 = 3
+    { 
+          Console.Write(" ");
     }
-     Console.WriteLine(""); 
-}
+    for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine("");
+ }
+
+Console.WriteLine(" Rev Pyramid  Star Pattern");
+
+int row_ = 4;
+ for (int i = row_-1; i >= 0; i--) // i = 4
+ {
+    for (int j = 0; j < row_ - i - 1; j++) //4 -4 -1 = 3
+    { 
+          Console.Write(" ");
+    }
+    for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine("");
+ }

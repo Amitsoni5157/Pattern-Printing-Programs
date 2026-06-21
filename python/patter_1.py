@@ -74,14 +74,47 @@
     
     # print("")
 # ----------------------------------------
-print("Triangle Star Pattern")
+# print("Triangle Star Pattern")
 
-# *
-# **
-# ***
-# ****
-size = 4
-for i in range(size):
-    for j in range(i+1):
-       print("*",end="")
+# # *
+# # **
+# # ***
+# # ****
+# size = 4
+# for i in range(size):
+#     for j in range(i+1):
+#        print("*",end="")
+#     print("")
+# -----------------------------
+# //       *
+# //      ***
+# //     *****
+# //    *******
+print("Pyramid Star Pattern")
+
+row = 4
+for i in range(row):
+    for space in range(row - i -1):
+         print(" ", end="")
+
+    for star in range(2 * i +1):
+         print("*",end=(""))  
+
     print("")
+
+# //       *
+# //      ***
+# //     *****
+# //    *******
+print("Rev Pyramid Star Pattern")
+
+row_ = 4
+for i in range(row_, 0, -1):
+    for space in range(row_ - i):
+         print(" ", end="")
+
+    for star in range(2 * i -1):
+         print("*",end=(""))  
+
+    print("")
+
