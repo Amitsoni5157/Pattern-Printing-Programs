@@ -90,7 +90,41 @@
 # //      ***
 # //     *****
 # //    *******
-print("Pyramid Star Pattern")
+# print("Pyramid Star Pattern")
+
+# row = 4
+# for i in range(row):
+#     for space in range(row - i -1):
+#          print(" ", end="")
+
+#     for star in range(2 * i +1):
+#          print("*",end=(""))  
+
+    # print("")
+
+# //       *
+# //      ***
+# //     *****
+# //    *******
+# print("Rev Pyramid Star Pattern")
+
+# row_ = 4
+# for i in range(row_, 0, -1):
+#     for space in range(row_ - i):
+#          print(" ", end="")
+
+#     for star in range(2 * i -1):
+#          print("*",end=(""))  
+
+#     print("")
+# ---------------------------------------------
+#     *
+#    * *
+#   *   *
+#  *******
+print(" Hollow  Pyramid  Star Pattern");
+
+row = 4
 
 row = 4
 for i in range(row):
@@ -98,23 +132,9 @@ for i in range(row):
          print(" ", end="")
 
     for star in range(2 * i +1):
-         print("*",end=(""))  
+         if star == 0 or star == 2* i or i == row -1:
+            print("*",end="")
+         else:
+            print(" ",end=(""))  
 
     print("")
-
-# //       *
-# //      ***
-# //     *****
-# //    *******
-print("Rev Pyramid Star Pattern")
-
-row_ = 4
-for i in range(row_, 0, -1):
-    for space in range(row_ - i):
-         print(" ", end="")
-
-    for star in range(2 * i -1):
-         print("*",end=(""))  
-
-    print("")
-

@@ -123,34 +123,64 @@
 //      ***  
 //     ***** 
 //    *******
- Console.WriteLine("Pyramid  Star Pattern");
+//  Console.WriteLine("Pyramid  Star Pattern");
+
+// int row = 4;
+//  for (int i = 0; i < row; i++) // i = 0
+//  {
+//     for (int j = 0; j < row - i - 1; j++) //4 -0 -1 = 3
+//     { 
+//           Console.Write(" ");
+//     }
+//     for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
+//     {
+//         Console.Write("*");
+//     }
+//     Console.WriteLine("");
+//  }
+
+// Console.WriteLine(" Rev Pyramid  Star Pattern");
+
+// int row_ = 4;
+//  for (int i = row_-1; i >= 0; i--) // i = 4
+//  {
+//     for (int j = 0; j < row_ - i - 1; j++) //4 -4 -1 = 3
+//     { 
+//           Console.Write(" ");
+//     }
+//     for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
+//     {
+//         Console.Write("*");
+//     }
+//     Console.WriteLine("");
+//  }
+// // ------------------------------------------
+
+Console.WriteLine(" Hollow  Pyramid  Star Pattern");
+
+//     *        3-1-3
+//    * *     2-1-1-1-2
+//   *   *    1-1-3-1-1
+//  ******* 1-1-1-1-1-1-1
 
 int row = 4;
  for (int i = 0; i < row; i++) // i = 0
  {
-    for (int j = 0; j < row - i - 1; j++) //4 -0 -1 = 3
+    for (int space = 0; space < row - i - 1; space++) //4 -0 -1 = 3
     { 
-          Console.Write(" ");
+          Console.Write("_");
     }
-    for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
+    for (int j = 0; j < (2 * i + 1); j++) // 2 * 3+ 1 = 7
     {
+        if(j == 0 || j == 2 * i|| i == row -1)
+        {
         Console.Write("*");
+        }
+        else
+        {
+        Console.Write("_");
+        }       
     }
     Console.WriteLine("");
  }
 
-Console.WriteLine(" Rev Pyramid  Star Pattern");
-
-int row_ = 4;
- for (int i = row_-1; i >= 0; i--) // i = 4
- {
-    for (int j = 0; j < row_ - i - 1; j++) //4 -4 -1 = 3
-    { 
-          Console.Write(" ");
-    }
-    for (int k = 0; k < (2 * i+1); k++) // 2 * 3+ 1 = 7
-    {
-        Console.Write("*");
-    }
-    Console.WriteLine("");
- }
